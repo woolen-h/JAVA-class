@@ -1,0 +1,26 @@
+package oop0313;
+
+public class Test07_format {
+
+	public static void main(String[] args) {
+		// 출력서식
+		/*
+		 * \n 줄바꿈
+		 * \t 탭
+		 * \r
+		 * \b
+		 * 
+		 * %d 10진 정수형
+		 * %f 실수형
+		 * %c 문자형
+		 * %s 문자열형
+		 * 
+		 * System.out.printf("출력서식", 값);
+		 * */
+		
+		System.out.print("사과\n참외\n\n수박\n\n\n");
+		System.out.print("바\t\t나\t나");
+		System.out.print("\n\n딸기");
+	}
+
+}

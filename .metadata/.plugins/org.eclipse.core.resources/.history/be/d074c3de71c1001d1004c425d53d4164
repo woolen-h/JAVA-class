@@ -1,0 +1,12 @@
+package oop0313;
+
+public class Test06_quiz {
+
+	public static void main(String[] args) {
+		// 연습문제
+		double year=365.2422;
+		int total=(int)(year*86400);
+		System.out.println(total);
+	}
+
+}

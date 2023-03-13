@@ -1,0 +1,13 @@
+package oop0313;
+
+public class Test02_print {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 콘솔창 출력
+		
+		System.out.print(123); 		// 숫자 데이터
+		System.out.print("SEOUL");	// 문자열 데이터
+	}
+
+}

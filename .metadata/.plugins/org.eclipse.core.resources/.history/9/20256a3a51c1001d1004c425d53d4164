@@ -1,0 +1,27 @@
+package oop0313;
+
+public class Test03_datatype {
+
+	public static void main(String[] args) {
+		// 자료형 Datatype
+		// -> 기본 자료형
+		// -> 참조 자료형(클래스)
+		
+		// 1. 정수형
+		// -> 소수점이 없다.
+		byte a=1;		// 1바이트 할당
+		short b=3;		// 2바이트 할당
+		int c=5;		// 4바이트 할당(기본)
+		long d=7;		// 8바이트 할당
+		
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		System.out.println(d);
+		// 2. 실수형
+		// 3. 문자형
+		// 4. 문자열형
+		// 5. 논리형
+	}
+
+}
