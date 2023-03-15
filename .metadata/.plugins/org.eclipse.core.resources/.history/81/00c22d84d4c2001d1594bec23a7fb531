@@ -1,0 +1,13 @@
+package oop0315;
+
+public class Test03_method {
+	
+	public static void main(String[] args) {
+		// 메소드 호출 방식(Call by value / Call by reference)
+		int[] num = {10,20,30};
+		
+		test1(num[0],num[2]);
+
+	}
+
+}

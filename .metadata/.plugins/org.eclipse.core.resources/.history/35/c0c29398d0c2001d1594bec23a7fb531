@@ -1,0 +1,25 @@
+package oop0315;
+
+public class Test02_overload {
+	public static void hap (int a) {
+		System.out.println(a);
+	}
+	public static void hap (int a, int b) {
+		System.out.println(a+b);
+	}
+	public static void hap (double a) {
+		System.out.println(a);
+	}
+	public static void hap (double a, double b) {
+		System.out.println(a+b);
+	}
+	public static void main(String[] args) {
+		// overload 함수명 중복정의
+		// 전제조건 : 매개변수의 자료형, 갯수가 달라야 한다
+		hap(3);
+		hap(2,4);
+		hap(5.6);
+		hap(9.8,7.6);
+	}
+
+}
