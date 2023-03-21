@@ -2,8 +2,6 @@ package oop0315;
 
 import java.util.GregorianCalendar;
 
-import org.w3c.dom.css.Counter;
-
 public class Test07_constructor {
 
 	public static void main(String[] args) {
