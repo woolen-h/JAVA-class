@@ -1,0 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ include file="../header.jsp" %>
+        <!-- 본문 시작 bbsForm.jsp -->
+          <h3>글쓰기</h3>
+          <p><a href="bbsList.jsp">[글 목록]</a></p>
+          <form name="bbsfrm" id="bbsfrm" method="post" action="bbsIns.jsp" onsubmit="return bbsCheck()">
+          
+          </form>
+        <!-- 본문 끝 -->
+    <%@ include file="../footer.jsp" %>

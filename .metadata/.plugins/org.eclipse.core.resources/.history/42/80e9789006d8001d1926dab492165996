@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>travelList.jsp</title>
+<style>
+header	{background:fuchsia; color:white;}
+nav		{background:olive; color:white;}
+footer	{background:orange; color:white;}
+table {
+width: 100%;
+}
+</style>
+</head>
+<body>
+<header>여행예약 프로그램 ver2018-12</header>
+<nav>
+<jsp:include page="mainmenu.jsp"></jsp:include>
+</nav>
+<section>
+<!-- 본문시작 -->
+<h3>여행내역 조회</h3>
+<table name= border="1">
+<tr>
+<th>예약번호</th>
+<th>주민번호</th>
+<th>이름</th>
+<th>전화번호</th>
+<th>이메일</th>
+<th>상태</th>
+</tr>
+<tr>
+<th></th>
+<td></td>
+</tr>
+</table>
+<!-- 본문끝 -->
+</section>
+<footer>
+HRDKOREA Copyright&copy;2018 All rights reserved.
+Human Resources Development Service of Korea
+</footer>
+</body>
+</html>

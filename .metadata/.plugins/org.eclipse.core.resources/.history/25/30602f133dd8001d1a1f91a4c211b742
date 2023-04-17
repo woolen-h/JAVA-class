@@ -1,0 +1,14 @@
+package net.sungjuk;
+
+public class SungjukDTO {
+	//sungjuk테이블의 칼럼명 기준으로 멤버변수 선언
+	
+	private int sno;
+	private String uname;
+	private int kor;
+	private int eng;
+	private int mat;
+	private int aver;
+	private String addr;
+	private String wdate;
+}

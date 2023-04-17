@@ -1,0 +1,10 @@
+package net.utility;
+
+public class DBClose {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package net.utility;
+
+public class DBClose {
+	//데이터베이스 연결 자원 반납
+	
+	public static void close() {}//end
+	public static void close() {}//end
+	public static void close() {}//end
+
+}//class end
