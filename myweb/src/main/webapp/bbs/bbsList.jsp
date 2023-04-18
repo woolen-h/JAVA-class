@@ -14,7 +14,8 @@
 <th>작성일</th>
 </tr>
 <%
-ArrayList<BbsDTO> list=dao.list();
+int recodePerPage=5;
+ArrayList<BbsDTO> list=dao.list3(col, word, nowPage, recodePerPage);  
 if(list==null){
 	out.println("<tr>");
 	out.println("<td colspan='5'>글 없음</td>");
@@ -36,7 +37,7 @@ if(list==null){
 		out.println("<img src='../images/reply.gif'>");
 	}//for end
 	%>
-	<a href="bbsRead.jsp?bbsno=<%=dto.getBbsno() %>"><%=dto.getSubject() %></a>
+	<a href="bbsRead.jsp?bbsno=<%=dto.getBbsno() %>&col=<%=col%>&word=<%=word%>"><%=dto.getSubject() %></a>
 	<%
 	// 오늘 작성한 글 제목 뒤 new 출력
 	String regdt=dto.getRegdt().substring(0,10);
@@ -53,10 +54,17 @@ if(list==null){
 </tr>
 <%
 	}//for end
-	int totalRecord=dao.count();
+	int totalRecord=dao.count2(col, word);
 	out.println("<tr>");
 	out.println("<td>");
 	out.println("글 작성 수 : "+totalRecord+"건");
+	out.println("</td>");
+	out.println("</tr>");
+	
+	out.println("<tr>");
+	out.println("<td>");
+	String paging=new Paging().paging1(totalRecord, nowPage, recordPerPage, col, word, "bbsList.jsp");
+	out.println(paging);
 	out.println("</td>");
 	out.println("</tr>");
 	%>

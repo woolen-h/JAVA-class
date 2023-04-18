@@ -38,3 +38,13 @@ function bbsCheck(){
 
     return true;
 }//bbsCheck
+
+function searchCheck(){
+	let word=document.getElementById("word").value;
+	word=word.trim();
+	if(word.length==0){
+		alert("검색어를 입력해주세요.");
+		return false;
+	}// if end
+	return true;
+}//searchCheck()

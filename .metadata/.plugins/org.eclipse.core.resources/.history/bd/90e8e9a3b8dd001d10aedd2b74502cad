@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<body>
+	<h3>SCOPE Result 페이지</h3>
+	<%
+	out.print("1. pageContext 영역 : " + pageContext.setAttribute("one", 100) + "<hr>");
+	out.print("2. request 영역 : " + request.setAttribute("two", 200) + "<hr>");
+	out.print("3. session 영역 : " + session.setAttribute("three", 300) + "<hr>");
+	out.print("4. application 영역 : " + application.setAttribute("uid", "ITWILL") + "<hr>");
+
+	%>
+</body>
+</html>

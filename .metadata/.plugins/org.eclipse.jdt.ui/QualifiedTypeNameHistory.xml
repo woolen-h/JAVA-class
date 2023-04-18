@@ -46,7 +46,6 @@
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="net.sungjuk.SungjukDAO"/>
-    <fullyQualifiedTypeName name="javax.sql.rowset.JoinRowSet"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="org.eclipse.jdt.internal.compiler.ast.ReturnStatement"/>
     <fullyQualifiedTypeName name="net.sungjuk.SungjukDTO"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="net.utility.DBOpen"/>
     <fullyQualifiedTypeName name="net.bbs.BbsDTO"/>
     <fullyQualifiedTypeName name="net.utility.DBClose"/>
+    <fullyQualifiedTypeName name="javax.sql.rowset.JoinRowSet"/>
 </qualifiedTypeNameHistroy>
