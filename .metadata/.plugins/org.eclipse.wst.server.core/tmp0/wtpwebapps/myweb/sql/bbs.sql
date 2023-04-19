@@ -98,4 +98,54 @@ where subject like '%파스타%'
 where content like '%파스타%'
 -- 작성자에서 '파스타'가 있는지 검색
 where wname like '%파스타%'
+----------------------------------------------------
+--[페이징]
+-- rownum 줄번호 활용
+select bbsno, subject, wname, readcnt, indent, regdt
+from tb_bbs
+order by grpno desc, ansnum asc
 
+	-- rownum 추가
+	select bbsno, subject, wname, readcnt, indent, regdt, rownum
+	from tb_bbs
+	order by grpno desc, ansnum asc
+	
+	-- 셀프조인 + rownum 추가
+	select bbsno, subject, wname, readcnt, indent, regdt, rownum
+	from (
+			select bbsno, subject, wname, readcnt, indent, regdt
+			from tb_bbs
+			order by grpno desc, ansnum asc);
+	-- 줄번호 1~5 조회
+	select bbsno, subject, wname, readcnt, indent, regdt, rownum
+	from (
+			select bbsno, subject, wname, readcnt, indent, regdt
+			from tb_bbs
+			order by grpno desc, ansnum asc)
+	where rownum>=1 and rownum<=5;
+	-- 줄번호 6~10 조회
+	select bbsno, subject, wname, readcnt, indent, regdt, rownum
+	from (
+			select bbsno, subject, wname, readcnt, indent, regdt
+			from tb_bbs
+			order by grpno desc, ansnum asc)
+	where rownum>=6 and rownum<=10;
+	-- 3 셀프조인 후 rownum 칼럼명 r로 변경
+	select *
+	from (select bbsno, subject, wname, readcnt, indent, regdt, rownum as r
+			from (
+					select bbsno, subject, wname, readcnt, indent, regdt
+					from tb_bbs
+					order by grpno desc, ansnum asc))
+	where r>=6 and r<=10;
+	-- 페이징 + 검색
+	-- 제목에서 '파스타'가 있는 행을 검색 2페이지 조회하시오.
+	select *
+	from (select bbsno, subject, wname, readcnt, indent, regdt, rownum as r
+			from (
+					select bbsno, subject, wname, readcnt, indent, regdt
+					from tb_bbs
+					where subject like '%파스타%'
+					order by grpno desc, ansnum asc))
+	where r>=6 and r<=10;
+	

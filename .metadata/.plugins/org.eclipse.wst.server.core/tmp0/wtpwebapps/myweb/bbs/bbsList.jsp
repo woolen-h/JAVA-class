@@ -14,7 +14,8 @@
 <th>작성일</th>
 </tr>
 <%
-ArrayList<BbsDTO> list=dao.list2(col, word);  
+int recodePerPage=5;
+ArrayList<BbsDTO> list=dao.list3(col, word, nowPage, recodePerPage);  
 if(list==null){
 	out.println("<tr>");
 	out.println("<td colspan='5'>글 없음</td>");
@@ -57,6 +58,13 @@ if(list==null){
 	out.println("<tr>");
 	out.println("<td>");
 	out.println("글 작성 수 : "+totalRecord+"건");
+	out.println("</td>");
+	out.println("</tr>");
+	
+	out.println("<tr>");
+	out.println("<td>");
+	String paging=new Paging().paging1(totalRecord, nowPage, recordPerPage, col, word, "bbsList.jsp");
+	out.println(paging);
 	out.println("</td>");
 	out.println("</tr>");
 	%>

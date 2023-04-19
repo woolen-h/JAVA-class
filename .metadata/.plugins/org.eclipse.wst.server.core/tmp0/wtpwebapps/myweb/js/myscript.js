@@ -48,3 +48,19 @@ function searchCheck(){
 	}// if end
 	return true;
 }//searchCheck()
+
+function loginCheck(){
+	let id=document.getElementById("id").value;
+	id=id.trim();
+	if(id.length<5 || id.length>10){
+		alert("아이디는 5 ~ 10글자 이내입니다.");
+		return false;
+	}//if end
+	let passwd=document.getElementById("passwd").value;
+	passwd=passwd.trim();
+	if(passwd.length<5 || passwd.length>10){
+		alert("비밀번호는 5 ~ 10글자 이내입니다.");
+		return false;
+	}//if end
+	return true;
+}//loginCheck()

@@ -1,0 +1,5 @@
+package net.member;
+
+public class MemberDAO {
+
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>myweb</display-name>
+  <!-- web.xml 배치관리자 -->
+  <!-- 수정되면 반드시 서버 재시작 -->
+  <!-- WEB-INF/lib에 외부 라이브러리 추가 시 서버 재시작 -->
+  <servlet-mapping>
+  <servlet-name>default</servlet-name>
+  <url-pattern>/</url-pattern>
+  <url-pattern>*.js</url-pattern>
+  <url-pattern>*.css</url-pattern>
+  <url-pattern>*.jpg</url-pattern>
+  <url-pattern>*.gif</url-pattern>
+  <url-pattern>*.png</url-pattern>
+  <url-pattern>*.ico</url-pattern>
+  <url-pattern>*.swf</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 웹어플리케이션 연결 시 첫 페이지 등록 -->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

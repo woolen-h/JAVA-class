@@ -1,4 +1,6 @@
 INDEX VERSION 1.131
+I:\java202301\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1761468762.index
+\myweb\src\main\java
 I:\java202301\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4104064490.index
 \basic04_web\src\main\java
 I:\java202301\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\255931392.index
