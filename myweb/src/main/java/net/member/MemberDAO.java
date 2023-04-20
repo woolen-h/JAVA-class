@@ -43,4 +43,33 @@ public class MemberDAO {
 		}//try
 		return mlevel;
 	}//loginProc() 
+
+	public int duplecateID(String id) {
+		int cnt=0;
+		try {
+			con=dbopen.getConnection();
+			sql=new StringBuilder();
+			sql.append("select count(id) as cnt ");
+			sql.append("from member ");
+			sql.append("where id=? ");
+			
+			pstmt=con.prepareStatement(sql.toString());
+			pstmt.setString(1, id);
+			
+			rs=pstmt.executeQuery();
+			if(rs.next()) {
+				cnt=rs.getInt("cnt");
+			}//if
+		} catch (Exception e) {
+			System.out.println("아이디 중복 확인 실패 : "+e);
+			// TODO: handle exception
+		} finally {
+			DBClose.close(con, pstmt, rs);
+		}//try
+		return cnt;
+	}//duple
+
+	
+	
 }//class
+

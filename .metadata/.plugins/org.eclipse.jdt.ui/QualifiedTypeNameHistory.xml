@@ -55,9 +55,9 @@
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="net.utility.DBOpen"/>
-    <fullyQualifiedTypeName name="net.member.MemberDAO"/>
     <fullyQualifiedTypeName name="net.member.MemberDTO"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="net.member.MemberDAO"/>
     <fullyQualifiedTypeName name="net.utility.DBClose"/>
 </qualifiedTypeNameHistroy>

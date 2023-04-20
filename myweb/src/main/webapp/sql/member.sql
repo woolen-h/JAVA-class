@@ -57,4 +57,10 @@ values('korea', '12341234', '웹마스터', '123-4567', 'user1@soldesk.com'
 	WHERE id = 'korea'
 	AND passwd = '12341234'
 	AND mlevel IN ('A1', 'B1', 'C1', 'D1', 'E1');
+	
+	
+	--아이디 중복 확인
+	select count(id)
+	from member
+	where id=?;
      
