@@ -1,0 +1,17 @@
+<%@page import="net.bbs.BbsDTO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ include file="../header.jsp" %>
+        <!-- 본문 시작 findID.jsp -->
+          <h3>아이디/비번 찾기</h3>
+<%
+String mname=request.getParameter("mname").trim();
+String email=request.getParameter("email").trim();
+
+dto.setMname(mname);
+dto.setEmail(email);
+
+boolean flag=dao.findID(dto);
+%>
+        <!-- 본문 끝 -->
+    <%@ include file="../footer.jsp" %>

@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>파일 첨부 테스트 결과</h3>
+<%
+/* request.setCharacterEncoding("UTF-8");
+out.print(request.getParameter("uname"));
+out.print("<hr>");
+out.print(request.getParameter("subject"));
+out.print("<hr>");
+out.print(request.getParameter("content"));
+out.print("<hr>");
+out.print(request.getParameter("filenm"));
+out.print("<hr>");
+ */
+ 
+ //첨부 파일 저장
+ String saveDirectory=application.getRealPath("/storage");
+ out.print(saveDirectory);
+%>
+</body>
+</html>

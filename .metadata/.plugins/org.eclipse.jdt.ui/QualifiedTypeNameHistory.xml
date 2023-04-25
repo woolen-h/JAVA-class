@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="oop0320.Son"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
-    <fullyQualifiedTypeName name="oop0321.TypeA"/>
-    <fullyQualifiedTypeName name="oop0321.Creature"/>
-    <fullyQualifiedTypeName name="oop0321.Message"/>
-    <fullyQualifiedTypeName name="oop0321.IMessage"/>
-    <fullyQualifiedTypeName name="oop0321.WebProgram.Language"/>
     <fullyQualifiedTypeName name="oop0321.WebProgram"/>
     <fullyQualifiedTypeName name="oop0321.WebProgram.Smart"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
@@ -51,13 +44,20 @@
     <fullyQualifiedTypeName name="net.bbs.BbsDAO"/>
     <fullyQualifiedTypeName name="net.bbs.BbsDTO"/>
     <fullyQualifiedTypeName name="javax.sql.rowset.JoinRowSet"/>
+    <fullyQualifiedTypeName name="net.member.MemberDTO"/>
+    <fullyQualifiedTypeName name="net.utility.DBClose"/>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="org.apache.catalina.Authenticator"/>
+    <fullyQualifiedTypeName name="jakarta.websocket.Session"/>
+    <fullyQualifiedTypeName name="oracle.jdbc.driver.Message"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.annotation.ServletSecurity.TransportGuarantee"/>
+    <fullyQualifiedTypeName name="net.member.MemberDAO"/>
+    <fullyQualifiedTypeName name="net.utility.MyAuthenticator"/>
+    <fullyQualifiedTypeName name="java.net.Authenticator"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="net.utility.DBOpen"/>
-    <fullyQualifiedTypeName name="net.member.MemberDTO"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
-    <fullyQualifiedTypeName name="net.member.MemberDAO"/>
-    <fullyQualifiedTypeName name="net.utility.DBClose"/>
+    <fullyQualifiedTypeName name="net.utility.DBOpen"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,5 @@
+package net.pds;
+
+public class PdsDTO {
+
+}

@@ -1,0 +1,12 @@
+package net.pds;
+
+public class PdsDTO {
+	private int pdsno;
+	private String wname;
+	private String subject;
+	private String regdate;
+	private String passwd;
+	private int readcnt;
+	private String filename;
+	private long filesize;
+}
