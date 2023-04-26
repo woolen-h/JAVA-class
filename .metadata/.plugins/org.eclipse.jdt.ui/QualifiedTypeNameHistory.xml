@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="oop0321.WebProgram"/>
     <fullyQualifiedTypeName name="oop0321.WebProgram.Smart"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
@@ -37,7 +36,6 @@
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="net.sungjuk.SungjukDAO"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="org.eclipse.jdt.internal.compiler.ast.ReturnStatement"/>
     <fullyQualifiedTypeName name="net.sungjuk.SungjukDTO"/>
     <fullyQualifiedTypeName name="java.security.PublicKey"/>
@@ -45,7 +43,6 @@
     <fullyQualifiedTypeName name="net.bbs.BbsDTO"/>
     <fullyQualifiedTypeName name="javax.sql.rowset.JoinRowSet"/>
     <fullyQualifiedTypeName name="net.member.MemberDTO"/>
-    <fullyQualifiedTypeName name="net.utility.DBClose"/>
     <fullyQualifiedTypeName name="java.util.Properties"/>
     <fullyQualifiedTypeName name="org.apache.catalina.Authenticator"/>
     <fullyQualifiedTypeName name="jakarta.websocket.Session"/>
@@ -58,6 +55,9 @@
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="net.utility.DBOpen"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="net.utility.DBClose"/>
+    <fullyQualifiedTypeName name="net.pds.PdsDTO"/>
 </qualifiedTypeNameHistroy>

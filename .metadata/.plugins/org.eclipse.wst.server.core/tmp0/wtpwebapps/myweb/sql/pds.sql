@@ -20,3 +20,6 @@ create sequence pds_seq;
 --filename, filesize
 
 commit;
+
+
+delete from tb_pds where pdsno=? and passwd=?

@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ include file="ssi.jsp" %>
+    <%@ include file="../header.jsp" %>
+        <!-- 본문 시작 pdsList.jsp -->
+          <h3>포   토   갤   러   리</h3>
+          <p><a href="pdsForm.jsp">[사진업로드]</a></p>
+          <%
+          ArrayList<PdsDTO> list=dao.list();
+          if(list==null){
+        	  out.println("관련 자료 없음");
+          }else{
+        	  out.println("전체 글 갯수 : "+list.size());
+          }//if
+          %>
+        <!-- 본문 끝 -->
+    <%@ include file="../footer.jsp" %>

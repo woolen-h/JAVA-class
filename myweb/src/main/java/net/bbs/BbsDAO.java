@@ -164,7 +164,7 @@ public class BbsDAO {//Data Access Object 데이터베이스 관련 작업
         }finally {
             DBClose.close(con, pstmt);
         }//end
-	}//incrementCnt() end	
+	}//incrementCnt() end
 	
 	
     public int delete(BbsDTO dto) {

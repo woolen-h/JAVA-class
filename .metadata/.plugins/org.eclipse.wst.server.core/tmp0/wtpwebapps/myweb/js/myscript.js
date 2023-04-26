@@ -151,3 +151,65 @@ function findIDCheck(){
 	}//if
 return true;
 }
+
+function pdsCheck(){
+    //포토갤러리 유효성 검사
+    //이름
+    let wname=document.getElementById("wname").value;
+    wname=wname.trim();
+    if(wname.length<2){
+        alert("이름은 두 글자 이상이어야 합니다.");
+        document.getElementById("wname").focus();
+        return false;
+    }
+    //제목
+    let subject=document.getElementById("subject").value;
+    subject=subject.trim();
+    if(subject.length<2){
+        alert("제목은 두 글자 이상이어야 합니다.");
+        document.getElementById("subject").focus();
+        return false;
+    }
+    //비밀번호
+    let passwd=document.getElementById("passwd").value;
+    passwd=passwd.trim();
+    if(passwd.length<4 || isNaN(passwd)){
+        alert("비밀번호는 네 글자 이상 숫자로 입력해주세요.");
+        document.getElementById("passwd").focus();
+        return false;
+    }
+    //첨부파일 png, jpg, gif
+    let filename=document.getElementById("filename").value;
+    filename=filename.trim();
+    if(filename.length==0){
+        alert("첨부파일 선택하세요.");
+        return false;
+	}else{
+		let dot=filename.lastIndexof(".");
+		let ext=filename.substr(dot+1);
+		ext=ext.toLowerCase();
+		if(ext=="png" ||ext=="jpg"||ext=="gif"){
+			return true;
+		}else{
+			alert('이미지 파일만 업로드 가능합니다.');
+			return false;
+		}
+	}//if
+    }//pdsCheck()
+    
+    
+    function pwCheck2(){
+		let passwd=document.getElementById("passwd").value;
+    	passwd=passwd.trim();
+    	if(passwd.length<4 || isNaN(passwd)){
+        alert("비밀번호는 네 글자 이상 숫자로 입력해주세요.");
+        document.getElementById("passwd").focus();
+        return false;
+    	}//if
+		let message="첨부파일도 삭제됩니다\n 계속 진행할까요?"
+		if(confirm(message)){
+			return true;
+		}else{
+			return false;
+		}//if
+	}//pwCheck2

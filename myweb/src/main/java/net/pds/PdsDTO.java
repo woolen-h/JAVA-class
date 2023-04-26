@@ -9,7 +9,6 @@ public class PdsDTO {
 	private int readcnt;
 	private String filename;
 	private long filesize;
-}
 
 public PdsDTO() {}
 
@@ -81,5 +80,5 @@ public void setFilesize(long filesize) {
 public String toString() {
 	return "PdsDTO [pdsno=" + pdsno + ", wname=" + wname + ", subject=" + subject + ", regdate=" + regdate + ", passwd="
 			+ passwd + ", readcnt=" + readcnt + ", filename=" + filename + ", filesize=" + filesize + "]";
-}
+}}
 

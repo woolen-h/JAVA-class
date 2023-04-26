@@ -43,7 +43,7 @@ out.print("<hr>");
 	 out.print(mr.getParameter("content"));
 	 out.print("<hr>");
 	 
-	Enumeration files=mr.getFileNames();
+	 Enumeration files=mr.getFileNames();
 	
 	String item=(String)files.nextElement();
 	
