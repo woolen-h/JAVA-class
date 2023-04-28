@@ -5,7 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.Properties;
 
-import jakarta.websocket.Session;
+import javax.websocket.Session;
 import net.utility.DBClose;
 import net.utility.DBOpen;
 import net.utility.MyAuthenticator;
@@ -158,5 +158,4 @@ public class MemberDAO {
 	
 	
 }//class
-
 

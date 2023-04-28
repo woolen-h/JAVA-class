@@ -36,7 +36,6 @@ public boolean validate() {
 		}
 		return flag;*/
 	}
-}
 public void disp() {
 	// 문) 생년월일, 성별, 나이, 띠 출력
 	/*

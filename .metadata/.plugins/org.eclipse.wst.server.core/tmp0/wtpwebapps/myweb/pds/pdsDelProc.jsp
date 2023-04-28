@@ -14,7 +14,7 @@
 	dto.setPdsno(pdsno);
 	dto.setPasswd(passwd);
 	
-	int cnt=dao.delete(PdsDTO dto);
+	int cnt=dao.delete(pdsno, passwd, "test");
     if(cnt==0){
         out.println("<p>비밀번호가 일치하지 않습니다</p>");
         out.println("<p><a href='javascript:history.back()'>[다시시도]</a></p>");

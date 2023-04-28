@@ -10,8 +10,6 @@
           if(list==null){
         	  out.println("관련 자료 없음");
           }else{
-        	  out.println("전체 글 갯수 : "+list.size());
-          }//if
           %>
           <table class="table table-hover">
           <thead>
@@ -37,6 +35,8 @@
         	  </tr>
     	  <%
           }//for
+          out.println("전체 글 갯수 : "+list.size());
+          }//if
           %>
           </tbody>
           </table>

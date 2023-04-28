@@ -30,9 +30,9 @@ public class BbsDAO {//Data Access Object 데이터베이스 관련 작업
             
             sql=new StringBuilder();
             sql.append(" INSERT INTO tb_bbs(bbsno, wname, subject, content, passwd, ip, grpno) ");
-            sql.append(" VALUES (bbs_seq.nextval, ?, ?, ?, ?, ?, (SELECT NVL(MAX(bbsno), 0)+1 FROM tb_bbs)) ");
+            sql.append(" VALUES (?, ?, ?, (SELECT ifnull(MAX(bbsno), 0)+1 FROM tb_bbs as TB), ?,?,now()) ");
             
-            pstmt=con.prepareStatement(sql.toString());
+            pstmt=con.prepareStatement(sql.toString());  
             pstmt.setString(1, dto.getWname());
             pstmt.setString(2, dto.getSubject());
             pstmt.setString(3, dto.getContent());
@@ -265,7 +265,7 @@ public class BbsDAO {//Data Access Object 데이터베이스 관련 작업
                         
             // 답변글 추가
             sql.delete(0, sql.length());
-            sql.append(" INSERT INTO tb_bbs (bbsno, wname, subject, content, passwd, ip, grpno, indent, ansnum) ");
+            sql.append(" INSERT INTO tb_bbs (wname, subject, content, passwd, ip, grpno, indent, ansnum, regdt) ");
             sql.append(" VALUES (bbs_seq.nextval, ?, ?, ?, ?, ?, ?, ?, ?) ");
             
             pstmt=con.prepareStatement(sql.toString());

@@ -1,6 +1,5 @@
 package oop0320;
 
-import oop0320.Incheon.Seoul;
 
 class Jeju{
 	@Override

@@ -5,36 +5,66 @@ import java.io.File;
 public class Test01_File {
 
 	public static void main(String[] args) {
-		// file 클래스
+		//File 클래스
+        //->파일과 관련된 정보를 알 수 있다
+        //->파일명, 파일크기, 확장명, 파일타입~~
+		
 		try {
-			String pathName = "I:\\java202301\\doc\\20230309_java.pdf";
-			File file = new File(pathName);
+			//예외 발생이 예상되는 코드 작성
+			
+			//경로명+파일명
+			
+			//경로명으로 \기호를 사용하려면 \\기호를 2번씩 사용함
+			//String pathname="I:\\java202301\\doc\\20230309_java.pdf";
+			
+			//경로명으로 / 기호도 사용가능하다
+			String pathname="I:/java202301/doc/20230309_java.pdf";
+			
+			//File클래스에 파일 담기
+			File file=new File(pathname);
+			
 			if(file.exists()) {
-				System.out.println("파일 O");
-				long filesize = file.length();
-				System.out.println("파일크기 : "+filesize);
-				System.out.println("파일크기 : "+filesize/1024+"KB");
-				System.out.println("파일크기 : "+filesize/1024/1024+"MB");
+				System.out.println("파일 있어요~~");
 				
-				int lastdot = filename.lastIndexof(".");
-				String name = filename.substring(0, lastdot);
-				String ext = filename.substring(lastdot+1);
-				System.out.println("파일명 : "+name);
-				System.out.println("확장명 : "+ext);
+				long filesize=file.length();
+				System.out.println("파일크기 : " + filesize);
+				System.out.println("파일크기 : " + filesize/1024 + "KB");
+				System.out.println("파일크기 : " + filesize/1024/1024 + "MB");
 				
-				/*if(file.delete()) {
-					System.out.println(filename + "파일이 삭제되었습니다.");
-				} else {
-					System.out.println(filename + "파일 삭제 실패");
-				}//if
-				
+                String filename=file.getName();
+                System.out.println("파일명:"+filename);
+                
+                //파일삭제
+                //->실제 파일이 삭제되니 복사본 남겨 놓으시기 바랍니다
+                /*
+                if(file.delete()) {
+                    System.out.println(filename+" 파일이 삭제 되었습니다~");
+                }else {
+                    System.out.println(filename+" 파일 삭제 실패!!");
+                }//if end 
+                */
+                
+                //문) 파일명과 확장명을 분리해서 출력하시오
+                //   파일명 : 20230309_java
+                //   확장명 : pdf
+                int lastdot=filename.lastIndexOf("."); //마지막 . 의 위치
+                String name=filename.substring(0, lastdot);
+                String ext =filename.substring(lastdot+1);
+                System.out.println("파일명:"+name);
+                System.out.println("확장명:"+ext);
+                
 			}else {
-				System.out.println("파일 없음");*/
-			}
-		} catch (Exception e) {
+				System.out.println("파일 없어요!!");
+			}//if end			
+			
+			
+		}catch (Exception e) {
+			//예외가 발생되면 처리할 코드를 작성
 			System.out.println(e);
-		}//t/c end
+		}//end
+		
 		System.out.println("END");
-	}//main
+		
 
-}//class
+	}//main() end
+}//class end

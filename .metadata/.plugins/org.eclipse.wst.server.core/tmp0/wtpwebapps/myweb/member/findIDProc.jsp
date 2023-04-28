@@ -1,6 +1,8 @@
 <%@page import="net.bbs.BbsDTO"%>
+<%@page import="net.bbs.BbsDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ include file="ssi.jsp" %>
     <%@ include file="../header.jsp" %>
         <!-- 본문 시작 findID.jsp -->
           <h3>아이디/비번 찾기</h3>
